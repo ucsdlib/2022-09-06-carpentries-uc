@@ -9,13 +9,12 @@ country: "us"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
 latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "2021 - Sept 13 - Oct 1"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Sept. 6-14, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 
-humantime: "9:00 am - 1:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2021-09-13      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2021-09-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Scott Peterson (UCB)", "Reid Otsuji (UCSD)", "Stephanie Labou (UCSD)",
-"Kat Koziar (UCR)","Kimberly Thomas (UCSD)","Harry Zhou (UCSD)","Jamie Jamison (UCLA)", "Kristian Allen (UCLA)", "Zhiyuan Yao (UCLA)", "Leigh Phan (UCLA)", "Maddi Cowen (UCLA)", "Lisa McAulay (UCLA)", "Dave George (UCLA)", "Anna Sackmann (UCB)", "Erin Foster (UCB)", "David Palmquist (CSU Fullerton)", "Mark Matney (UCLA)", "Alexandre de Siqueira (UCB)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+humantime: "9:00 am - 12:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2022-09-06      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2022-09-14        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Scott Peterson (UCB)", "Reid Otsuji (UCSD)", "Kat Koziar (UCR)","Kimberly Thomas (UCSD)", "Zhiyuan Yao (UCLA)", "Anna Sackmann (UCB)", "Erin Foster (UCB)", "David Palmquist (CSU Fullerton)", "Mark Matney (UCLA)", "Alexandre de Siqueira (UCB)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Stephanie Labou (UCSD)", "Reid Otsuji (UCSD)", "Tim Dennis (UCLA)", "Kat Koziar (UCR)", "Scott Peterson (UCB)", "Alexandre de Siqueira (UCB)", "Kimberly Thomas (UCSD)", "Harry Zhou (UCSD)", "Reza Monadi (UCR)", "Anna Sackmann (UCB)", "Erin Foster (UCB)", "Lisa Ngo (UCB)", "Sam Teplitzky (UCB)", "Mark Matney (UCLA)", "Kristi Liu (UCSB)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["timdennis@ucla.edu","rotsuji@ucsd.edu","speterso@berkeley.edu","slabou@ucsd.edu","katherine.koziar@ucr.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["timdennis@ucla.edu", "rotsuji@ucsd.edu", "speterso@library.berkeley.edu"]
 collaborative_notes: https://codimd.carpentries.org/fwkQLM2ZTuCRirtE16WjBQ  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
