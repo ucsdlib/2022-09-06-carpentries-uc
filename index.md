@@ -3,254 +3,145 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "2021 UCSD-UCLA-UCB-UCR Fall Workshop"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "2022 Univesrity of California Fall Workshop"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "Zoom"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
 latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Sept. 6-14, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Sept. 6-13, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 
 humantime: "9:00 am - 12:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2022-09-06      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2022-09-14        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Scott Peterson (UCB)", "Reid Otsuji (UCSD)", "Kat Koziar (UCR)","Kimberly Thomas (UCSD)", "Zhiyuan Yao (UCLA)", "Anna Sackmann (UCB)", "Erin Foster (UCB)", "David Palmquist (CSU Fullerton)", "Mark Matney (UCLA)", "Alexandre de Siqueira (UCB)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Stephanie Labou (UCSD)", "Reid Otsuji (UCSD)", "Tim Dennis (UCLA)", "Kat Koziar (UCR)", "Scott Peterson (UCB)", "Alexandre de Siqueira (UCB)", "Kimberly Thomas (UCSD)", "Harry Zhou (UCSD)", "Reza Monadi (UCR)", "Anna Sackmann (UCB)", "Erin Foster (UCB)", "Lisa Ngo (UCB)", "Sam Teplitzky (UCB)", "Mark Matney (UCLA)", "Kristi Liu (UCSB)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["timdennis@ucla.edu","rotsuji@ucsd.edu","speterso@berkeley.edu","slabou@ucsd.edu","katherine.koziar@ucr.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["timdennis@ucla.edu", "rotsuji@ucsd.edu", "speterso@library.berkeley.edu"]
+enddate: 2022-09-13        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Scott Peterson (UCB)", "Reid Otsuji (UCSD)", "Kat Koziar (UCR)","Kimberly Thomas (UCSD)", "Zhiyuan Yao (UCLA)", "Christine Wells (UCLA)", "Scott Gruber (UCLA)", "Derek Devnich (UC Merced)", "Erin Foster (UC Berkeley)", "Kenji Hayashi (UCLA)", "Ryan Gan (El Camino)" ] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Stephanie Labou (UCSD)", "Reid Otsuji (UCSD)", "Kristi Liu (UCSB)", "Kat Koziar (UCR)", "Kimberly Thomas (UCSD)", "Lisa Ngo (UCB)", "Leigh Phan (UCLA)", "Eastern Kang (UCSD)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["kkt008@ucsd.edu", "zyao@ucla.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["timdennis@ucla.edu", "rotsuji@ucsd.edu", "speterso@library.berkeley.edu"]
 collaborative_notes: https://codimd.carpentries.org/fwkQLM2ZTuCRirtE16WjBQ  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:        # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-{% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
+<!--
+  HEADER (above)
+  Edit the values in the block above to be appropriate for your workshop.
+  If the value is not 'true', 'false', 'null', or a number, please use
+  double quotation marks around the value, unless specified otherwise.
+  And run 'tools/check' *before* committing to make sure that changes are good.
+-->
 
-{% comment %}
-HEADER
-
-Edit the values in the block above to be appropriate for your workshop.
-If the value is not 'true', 'false', 'null', or a number, please use
-double quotation marks around the value, unless specified otherwise.
-And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-
-{% comment %}
-8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
-
-
-{% comment %}
-8< ============================= until here ==================
-{% endcomment %}
-
-
-{% comment %}
-Check DC curriculum
-{% endcomment %}
-
-{% if site.carpentry == "dc" %}
-{% unless site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-socsci" or site.curriculum == "dc-geospatial" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
-
-{% comment %}
-Check SWC curriculum
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
-
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
+<!--
+  EVENTBRITE
+  This block includes the Eventbrite registration widget if
+  'eventbrite' has been set in the header.  You can delete it if you
+  are not using Eventbrite, or leave it in, since it will not be
+  displayed if the 'eventbrite' field in the header is not set.
+-->
 {% if page.eventbrite %}
-<p><strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.  </strong></p>
-<p>  <strong>Please join the waitlist if workshop is full. We want to open concurrent events if there is enough interest.  </strong></p
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
-  height="700px"
+  height="248px"
   scrolling="auto">
 </iframe>
 {% endif %}
 
-
-<!-- Place this where you want the widget to appear -->
-<tito-widget event="ucsd-carpentries/uc-carpentries-fall-workshop"></tito-widget>
-
 <h2 id="general">General Information</h2>
 
-{% comment %}
-INTRODUCTION
+<!--
+  INTRODUCTION
+  Edit the general explanatory paragraph below if you want to change
+  the pitch.
+-->
+<p>
+  <a href="{{site.swc_site}}">The Carpentries</a>
+  aims to help researchers get their work done in less time and with less pain by teaching them basic research computing skills. 
+  This workshop is designed for researchers and enables non-experts to develop computing skills for research analysis. We will cover 
+  basic concepts and tools, such as - working with libraries and data frames; reading and plotting data; creating and using functions; 
+  the shell using command-line applications; cleaning and transforming data; and more. Participants will be encouraged to help one another 
+  and to apply what they This is a free workshop and is open to all University of California students, staff, and faculty. 
+  have learned to their own research problems.
+</p>
 
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
+<p>
+  <em>
+    For more information on what we teach and why,
+    please see our paper
+    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
+  </em>
+</p>
 
-{% comment %}
-AUDIENCE
+</hr>
+<!--
+  AUDIENCE
+  Explain who your audience is.  (In particular, tell readers if the
+  workshop is only open to people from a particular institution.
+-->
+<p id="who">
+  <strong>Who:</strong>
+  This workshop is open to UCSD students, staff, and faculty.
+</p>
+<p>
+  <strong>You don't need to have any previous knowledge of programming or the tools presented in the workshop to attend.  A laptop is required for each session.</strong>
+</p>
 
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
-
-{% comment %}
-LOCATION
-
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://itouchmap.com/latlong.html to find the lat/long of an
-address.
-{% endcomment %}
-{% assign begin_address = page.address | slice: 0, 4 | downcase  %}
-{% if page.address == "online" %}
-{% assign online = "true_private" %}
-{% elsif begin_address contains "http" %}
-{% assign online = "true_public" %}
-{% else %}
-{% assign online = "false" %}
-{% endif %}
-{% if page.latitude and page.longitude and online == "false" %}
+<!--
+  LOCATION
+  This block displays the address and links to maps showing directions
+  if the latitude and longitude of the workshop have been set.  You
+  can use http://itouchmap.com/latlong.html to find the lat/long of an
+  address.
+-->
+{% if page.latlng %}
 <p id="where">
   <strong>Where:</strong>
   {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
-</p>
-{% elsif online == "true_public" %}
-<p id="where">
-  <strong>Where:</strong>
-  online at <a href="{{page.address}}">{{page.address}}</a>.
-  If you need a password or other information to access the training,
-  the instructor will pass it on to you before the workshop.
-</p>
-{% elsif online == "true_private" %}
-<p id="where">
-  <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
 </p>
 {% endif %}
 
-{% comment %}
-DATE
-
-This block displays the date and links to Google Calendar.
-{% endcomment %}
-{% if page.humandate %}
-<p id="when">
-  <strong>When:</strong>
-  {{page.humandate}}.
-  {% include workshop_calendar.html %}
-</p>
-{% endif %}
-
-{% comment %}
-SPECIAL REQUIREMENTS
-
-Modify the block below if there are any special requirements.
-{% endcomment %}
+<!--
+  SPECIAL REQUIREMENTS
+  Modify the block below if there are any special requirements.
+-->
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <strong>Requirements:</strong> Participants must bring a laptop with
+  a few specific software packages installed (listed
+  <a href="#setup">below</a>).
 </p>
 
-{% comment %}
-ACCESSIBILITY
-
-Modify the block below if there are any barriers to accessibility or
-special instructions.
-{% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
-{% if online == "false" %}
-  We are committed to making this workshop
-  accessible to everybody. The workshop organizers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
-{% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. Please
-  notify the instructors in advance of the workshop if you require any accommodations or if there is
-  anything we can do to make this workshop more accessible to you.
-</p>
-{% endif %}
-
-{% comment %}
-CONTACT EMAIL ADDRESS
-
-Display the contact email address set in the configuration file.
-{% endcomment %}
+<!--
+  CONTACT EMAIL ADDRESS
+  Display the contact email address set in the header.  If an address
+  isn't set in the header, the Software Carpentry admin address is
+  used.
+-->
 <p id="contact">
-  <strong>Contact:</strong>
-  Please email
-  {% if page.email %}
-  {% for email in page.email %}
-  {% if forloop.last and page.email.size > 1 %}
-  or
+  <strong>Contact</strong>:
+  Please mail
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
-  {% unless forloop.first %}
-  ,
-  {% endunless %}
-  {% endif %}
-  <a href='mailto:{{email}}'>{{email}}</a>
-  {% endfor %}
-  {% else %}
-  to-be-announced
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
   for more information.
 </p>
 
-<p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+<p id="certificate">
+<strong>Assessment</strong>:
+A Co-Curricular of Record activity recognition will be given to the student who:
 </p>
 
+<ul>
+<li>Attend and participate in all sessions</li>
+<li>Pass all workshop quizzes</li>
+</ul>
+<p>
+For more information on the UC San Diego Co-Curricular of Record (CCR), please visit the <a href="https://elt.ucsd.edu/ccr/index.html">UCSD Engaged Learning Tools Co-Curricular Record page</a>.
+</p>
 <hr/>
 
-{% comment%}
-CODE OF CONDUCT
-{% endcomment %}
+<!-- Below is the official Carpentries Code of Conduct information -->
+
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
@@ -262,74 +153,80 @@ Everyone who participates in Carpentries activities is required to conform to th
     <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
   </a>
 </p>
+
 <hr/>
 
+<!-- Below is the official Carpentries Survey links -->
 
-{% comment %}
-Collaborative Notes
-
-If you want to use an Etherpad, go to
-
-https://pad.carpentries.org/YYYY-MM-DD-site
-
-where 'YYYY-MM-DD-site' is the identifier for your workshop,
-e.g., '2015-06-10-esu'.
-
-Note we also have a CodiMD (the open-source version of HackMD)
-available at https://codimd.carpentries.org
-{% endcomment %}
-{% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
-
-<p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-<hr/>
-{% endif %}
-
-
-{% comment %}
-SURVEYS - DO NOT EDIT SURVEY LINKS
-{% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-
+<!--
+<p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+-->
 <hr/>
 
-
-{% comment %}
-SCHEDULE
-
-Show the workshop's schedule.  Edit the items and times in the table
-to match your plans.  You may also want to change 'Day 1' and 'Day
-2' to be actual dates or days of the week.
-{% endcomment %}
+<!--
+  SCHEDULE
+  Show the workshop's schedule.  
+-->
 <h2 id="schedule">Schedule</h2>
+<div class="row">
+  <div>
+    <table class="table">
+     <thead><tr> <th><strong>Date</strong></th> <th><strong>Session</strong></th> <th><strong>Topics</strong></th> </tr></thead>
+     <tbody>
+      <tr><td>Sept 6</td><td>Introduction to R - Part 1 <br> R: Introduction to Python - Part 1</td><td>Intro to R & RStudio - basics, data structures, and data import/export <br> Python: Running/Wuitting, Variables and Assignment, Data Types/Type Conversions, Built-in Functions, and Help</td></tr>
+      <tr><td>Sept 7</td><td>Introduction to R - Part 2 <br> Introduction to Python - Part 2</td><td> R: dplyr and tidyverse <br> Python: Libraries, Writing Functions, Reading/Writing data in Dataframes, and Pandas Dataframes</td></tr>
+      <tr><td>Sept 8</td><td>Introduction to R - Part 3 <br> Introduction to Python - Part 3</td><td> R: Plotting with ggplot2 and knitr <br> Python: Plotting, Lists, For Loops, Looping over Datasets, and Conditionals</td></tr>
+      <tr><td>Sept 9</td><td> The Unix Shell</td><td> Introduction, Navigating the file system, & working with files & directories</td></tr>
+      <tr><td>Sept 12</td><td> Version Control with Git</td><td> Introduction, Creating a Repository, Tracking Changes, and Collaborating</td></tr>
+      <tr><td>Sept 13</td><td> SQL <br> OpenRefine </td><td> SQL:Introduction, Creating a Repository, Tracking Changes, and Collaborating <br> OpenRefine: OpenRefine: Cleaning and Transforming data</td></tr>
+      </tbody></table>
+  </div>
+</div>
+</hr>
 
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% endif %}
+<h2 id="curriculum">Curriculum</h2>
+<!-- R specific data information begins -->
+<p id = "curriculum">
+For this workshop we will be referencing the <a href="https://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a>, <a href="https://librarycarpentry.org/lc-shell/">The UNIX Shell</a>, <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a> , <a href="https://librarycarpentry.org/lc-sql/">SQL</a>, and <a href="https://librarycarpentry.org/lc-open-refine/">OpenRefine</a> Carpentries curricula. 
+</p>
 
 <hr/>
 
-{% comment %}
-SETUP
+<h2 id="datasect">Data</h2>
+<!-- R specific data information begins -->
+<p id = "data">
+We will be using the 5 year gapminder data, feline data, and shell lesson data. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The data downloads are as follows: <a href="./data/gapminder-FiveYearData.csv">Gapminder data</a>, <a href="./data/feline-data.csv">feline data</a>, and the <a href="https://librarycarpentry.org/lc-shell/data/shell-lesson.zip">shell-lesson data</a>.</p>
+<!-- R specific data information ends -->
 
-Delete irrelevant sections from the setup instructions.  Each
-section is inside a 'div' without any classes to make the beginning
-and end easier to find.
+<hr/>
 
-This is the other place where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
+<h2 id="collabnotes">Collaborative Notes</h2>
+<!-- Python specific data information begins -->
+<p id = "notes">
+We will use HackMD collaborative notes for taking notes, and sharing URLs and bits of code. The link will be provided at each session.
+</p>
 
+<hr/>
+<!--
+  SETUP
+  Delete irrelevant sections from the setup instructions.  Each
+  section is inside a 'div' without any classes to make the beginning
+  and end easier to find.
+  This is the other place where people frequently make mistakes, so
+  please preview your site before committing, and make sure to run
+  'tools/check' as well.
+-->
+
+<h2 id="setup">Setup</h2>
+
+<p>
+  To participate in this workshop, you will need
+  access to the software described below. In addition, you will
+  need an up-to-date web browser.
+</p>
 <h2 id="setup">Setup</h2>
 
 <p>
