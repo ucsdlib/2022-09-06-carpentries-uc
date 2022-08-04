@@ -3,7 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "2022 Univesrity of California Fall Workshop"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "2022 UC Carpentries Fall Workshop"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "Zoom"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
@@ -16,7 +16,7 @@ startdate: 2022-09-06      # machine-readable start date for the workshop in YYY
 enddate: 2022-09-13        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Scott Peterson (UCB)", "Reid Otsuji (UCSD)", "Kat Koziar (UCR)","Kimberly Thomas (UCSD)", "Zhiyuan Yao (UCLA)", "Christine Wells (UCLA)", "Scott Gruber (UCLA)", "Derek Devnich (UC Merced)", "Erin Foster (UC Berkeley)", "Kenji Hayashi (UCLA)", "Ryan Gan (El Camino)" ] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Stephanie Labou (UCSD)", "Reid Otsuji (UCSD)", "Kristi Liu (UCSB)", "Kat Koziar (UCR)", "Kimberly Thomas (UCSD)", "Lisa Ngo (UCB)", "Leigh Phan (UCLA)", "Eastern Kang (UCSD)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["kkt008@ucsd.edu", "zyao@ucla.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["timdennis@ucla.edu", "rotsuji@ucsd.edu", "speterso@library.berkeley.edu"]
+contact: ["kkt008@ucsd.edu", "zyao@ucla.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["timdennis@ucla.edu", "rotsuji@ucsd.edu", "speterso@library.berkeley.edu"]
 collaborative_notes: https://codimd.carpentries.org/fwkQLM2ZTuCRirtE16WjBQ  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:        # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -71,7 +71,6 @@ eventbrite:        # optional: alphanumeric key for Eventbrite registration, e.g
   </em>
 </p>
 
-</hr>
 <!--
   AUDIENCE
   Explain who your audience is.  (In particular, tell readers if the
@@ -94,7 +93,7 @@ eventbrite:        # optional: alphanumeric key for Eventbrite registration, e.g
 -->
 {% if page.latlng %}
 <p id="where">
-  <strong>Where:</strong>
+  <strong>Location:</strong>
   {{page.address}}.
 </p>
 {% endif %}
@@ -127,16 +126,10 @@ eventbrite:        # optional: alphanumeric key for Eventbrite registration, e.g
 </p>
 
 <p id="certificate">
-<strong>Assessment</strong>:
-A Co-Curricular of Record activity recognition will be given to the student who:
-</p>
-
-<ul>
-<li>Attend and participate in all sessions</li>
-<li>Pass all workshop quizzes</li>
-</ul>
-<p>
-For more information on the UC San Diego Co-Curricular of Record (CCR), please visit the <a href="https://elt.ucsd.edu/ccr/index.html">UCSD Engaged Learning Tools Co-Curricular Record page</a>.
+<strong>For UCSD students</strong>:
+  A Co-Curricular of Record activity recognition may be requested for UCSD students who attend Day 1-3 plus one additional session day. 
+  For more information on the UC San Diego Co-Curricular of Record (CCR), please visit the <a href="https://elt.ucsd.edu/ccr/index.html">UCSD Engaged 
+  Learning Tools Co-Curricular Record page</a>.
 </p>
 <hr/>
 
