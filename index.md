@@ -173,7 +173,6 @@ Everyone who participates in Carpentries activities is required to conform to th
       </tbody></table>
   </div>
 </div>
-</hr>
 
 <h2 id="curriculum">Curriculum</h2>
 <!-- R specific data information begins -->
@@ -194,8 +193,7 @@ We will be using the 5 year gapminder data, feline data, and shell lesson data. 
 <h2 id="collabnotes">Collaborative Notes</h2>
 <!-- Python specific data information begins -->
 <p id = "notes">
-We will use HackMD collaborative notes for taking notes, and sharing URLs and bits of code. The link will be provided at each session.
-</p>
+We will use HackMD collaborative notes for taking notes, and sharing URLs and bits of code. The links to each session are listed here: (https://hackmd.io/Gb6tujHCR6ygyw9P37Xe5Q)</p>
 
 <hr/>
 <!--
@@ -208,13 +206,6 @@ We will use HackMD collaborative notes for taking notes, and sharing URLs and bi
   'tools/check' as well.
 -->
 
-<h2 id="setup">Setup</h2>
-
-<p>
-  To participate in this workshop, you will need
-  access to the software described below. In addition, you will
-  need an up-to-date web browser.
-</p>
 <h2 id="setup">Setup</h2>
 
 <p>
