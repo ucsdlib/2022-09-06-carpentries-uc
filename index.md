@@ -185,7 +185,7 @@ For this workshop we will be referencing the <a href="https://swcarpentry.github
 <h2 id="datasect">Data</h2>
 <!-- R specific data information begins -->
 <p id = "data">
-We will be using the 5 year gapminder data, feline data, and shell lesson data. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The data downloads are as follows: <a href="./data/gapminder-FiveYearData.csv">Gapminder data</a>, <a href="./data/feline-data.csv">feline data</a>, and the <a href="https://librarycarpentry.org/lc-shell/data/shell-lesson.zip">shell-lesson data</a>.</p>
+We will be using the specific software downloads and data for each lesson. Please refer to the listing of downloads needed for each session you'll be attending as provided at this link: https://hackmd.io/@U2NG/SJkaMk2t7</p>
 <!-- R specific data information ends -->
 
 <hr/>
@@ -193,7 +193,7 @@ We will be using the 5 year gapminder data, feline data, and shell lesson data. 
 <h2 id="collabnotes">Collaborative Notes</h2>
 <!-- Python specific data information begins -->
 <p id = "notes">
-We will use HackMD collaborative notes for taking notes, and sharing URLs and bits of code. The links to each session are listed here: (https://hackmd.io/Gb6tujHCR6ygyw9P37Xe5Q)</p>
+We will use HackMD collaborative notes for taking notes, and sharing URLs and bits of code. The links to each session are listed here: https://hackmd.io/Gb6tujHCR6ygyw9P37Xe5Q</p>
 
 <hr/>
 <!--
