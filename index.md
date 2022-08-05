@@ -116,13 +116,7 @@ eventbrite:        # optional: alphanumeric key for Eventbrite registration, e.g
 -->
 <p id="contact">
   <strong>Contact</strong>:
-  Please mail
-  {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
-  {% else %}
-    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
-  {% endif %}
-  for more information.
+  Please email kkt008@ucsd.edu or zyao@ucla.edu for more information.
 </p>
 
 <p id="certificate">
@@ -153,6 +147,7 @@ Everyone who participates in Carpentries activities is required to conform to th
 
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
+<p>pending<p>
 <!--
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
