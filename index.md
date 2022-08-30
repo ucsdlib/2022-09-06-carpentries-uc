@@ -177,7 +177,7 @@ Everyone who participates in Carpentries activities is required to conform to th
 <h2 id="curriculum">Curriculum</h2>
 <!-- R specific data information begins -->
 <p id = "curriculum">
-For this workshop we will be referencing the <a href="https://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a>, <a href="https://librarycarpentry.org/lc-shell/">The UNIX Shell</a>, <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a> , <a href="https://librarycarpentry.org/lc-sql/">SQL</a>, and <a href="https://librarycarpentry.org/lc-open-refine/">OpenRefine</a> Carpentries curricula. 
+For this workshop we will be referencing the <a href="https://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a>, <a href="http://swcarpentry.github.io/python-novice-gapminder/"> Plotting and Programming in Python</a>, <a href="https://librarycarpentry.org/lc-shell/">The UNIX Shell</a>, <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a> , <a href="https://librarycarpentry.org/lc-sql/">SQL</a>, and <a href="https://librarycarpentry.org/lc-open-refine/">OpenRefine</a> Carpentries curricula. 
 </p>
 
 <hr/>
