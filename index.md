@@ -164,7 +164,7 @@ Everyone who participates in Carpentries activities is required to conform to th
     <table class="table">
      <thead><tr> <th><strong>Date</strong></th> <th><strong>Session</strong></th> <th><strong>Topics</strong></th> </tr></thead>
      <tbody>
-      <tr><td>Sept 6</td><td>Introduction to R - Part 1 <br> Introduction to Python - Part 1</td><td>Intro to R & RStudio - basics, data structures, and data import/export <br> Python: Running/Wuitting, Variables and Assignment, Data Types/Type Conversions, Built-in Functions, and Help</td></tr>
+      <tr><td>Sept 6</td><td>Introduction to R - Part 1 <br> Introduction to Python - Part 1</td><td>Intro to R & RStudio - basics, data structures, and data import/export <br> Python: Running/Quitting, Variables and Assignment, Data Types/Type Conversions, Built-in Functions, and Help</td></tr>
       <tr><td>Sept 7</td><td>Introduction to R - Part 2 <br> Introduction to Python - Part 2</td><td> R: dplyr and tidyverse <br> Python: Libraries, Writing Functions, Reading/Writing data in Dataframes, and Pandas Dataframes</td></tr>
       <tr><td>Sept 8</td><td>Introduction to R - Part 3 <br> Introduction to Python - Part 3</td><td> R: Plotting with ggplot2 and knitr <br> Python: Plotting, Lists, For Loops, Looping over Datasets, and Conditionals</td></tr>
       <tr><td>Sept 9</td><td> The Unix Shell</td><td> Introduction, Navigating the file system, & working with files & directories</td></tr>
